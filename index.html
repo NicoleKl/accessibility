@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accessibility</title>
     <link rel="stylesheet" href="src/style/css/styles.css">
     <link rel="stylesheet" href="src/style/css/normalize.css">
@@ -16,7 +17,7 @@
             <nav class="header_navigation">
                 <ul>
                     <li>
-                        <a href="/" tabindex="1">About Us</a>
+                        <a href="/" tabindex="0">About Us</a>
                     </li>
                     <li>
                         <a href="/">Contact Us</a>
@@ -29,16 +30,16 @@
                     </li>
                     <li>
                         <select class="nav_language" name="language" id="language">
-                            <option value="english">Eng</option>
-                            <option value="ukrainian">Ukr</option>
+                            <option label='Eng' value="english">Eng</option>
+                            <option label='Ukr' value="ukrainian">Ukr</option>
                         </select>
                     </li>
                 </ul>
             </nav>
             <form class="header_search" role="search">
                 <input class="search_input" type="search" placeholder="Search this site"/>
-                <button class="search_button" type="submit">
-                    <img src="src/img/Search.svg" width="32" height="32" aria-hidden="true">
+                <button class="search_button" type="submit" name="search">
+                    <img src="src/img/Search.svg" alt="magnifier-icon" width="32" height="32" aria-hidden="true">
                 </button>
             </form>
         </div>
@@ -124,17 +125,17 @@
                     <ul class="social-links">
                         <li class="social-link">
                             <a>
-                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                                <img src="src/img/fb-icon.svg" alt="facebook-icon" width="28" height="28" aria-hidden="true">
                             </a>
                         </li>
                         <li class="social-link">
                             <a>
-                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                                <img src="src/img/fb-icon.svg" alt="facebook-icon" width="28" height="28" aria-hidden="true">
                             </a>
                         </li>
                         <li class="social-link">
                             <a>
-                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                                <img src="src/img/fb-icon.svg" alt="facebook-icon" width="28" height="28" aria-hidden="true">
                             </a>
                         </li>
                     </ul>
@@ -185,21 +186,21 @@
                         </div>
                         <div class="radio-btn">
                             <input type="radio" id="other" name="profession" value="other"/>
-                            <label class="form-label" for="other">Other</>
+                            <label class="form-label" for="other">Other</label>
                         </div>
                     </div>
                     <div class="form_message">
-                        <label class="form-label">Message</label>
-                        <textarea placeholder="Text here..."></textarea>
+                        <label class="form-label" for="message-text">Message</label>
+                        <textarea placeholder="Text here..." id="message-text"></textarea>
                     </div>
                     <div class="form_terms">
                         <div class="accept-terms">
-                            <input type="checkbox" required/>
-                            <label class="form-label">Accept Terms</label>
+                            <input type="checkbox" id="terms1" required/>
+                            <label class="form-label" for="terms1">Accept Terms</label>
                         </div>
                         <div class="accept-terms">
-                            <input type="checkbox" required/>
-                            <label class="form-label">Accept Terms 2</label>
+                            <input type="checkbox" id="terms2" required/>
+                            <label class="form-label" for="terms2">Accept Terms 2</label>
                         </div>
                     </div>
                     <button class="send-message-btn" type="submit">
@@ -236,25 +237,27 @@
                             <a href="/">Site Map</a>
                         </li>
                     </ul>
-                    <ul class="nav-list">
+                    <div>
                         <address>
-                            <li>Contacts</li>
-                            <li>
-                                <a class="contact-link" href="tel:+380630720121">
-                                    +38 063 072 0121
-                                </a>
-                            </li>
-                            <li>
-                                <a class="contact-link" href="mailto:plantme.store@gmail.com">
-                                    plantme.store@gmail.com
-                                </a>
-                            </li>
+                            <ul class="nav-list">
+                                <li>Contacts</li>
+                                <li>
+                                    <a class="contact-link" href="tel:+380630720121">
+                                        +38 063 072 0121
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact-link" href="mailto:plantme.store@gmail.com">
+                                        plantme.store@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
                         </address>
                         <div class="billing-systems">
                             <img src="src/img/visa.svg" width="50" height="29" alt="visa-logo">
                             <img src="src/img/master.svg" width="50" height="42" alt="mastercard-logo">
                         </div>
-                    </ul>
+                    </div>
                 </nav>
         </div>
         <div class="footer_auth">

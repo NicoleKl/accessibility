@@ -287,9 +287,8 @@
   margin-bottom: 24px;
 }
 .footer_navigation .nav-list {
+  padding: 0;
   list-style: none;
-}
-.footer_navigation .nav-list:not(:last-of-type) {
   margin-right: 100px;
 }
 .footer_navigation .nav-list li {

@@ -33,10 +33,9 @@
     justify-content: space-between;
     margin-bottom: 24px;
     .nav-list {
+      padding: 0;
       list-style: none;
-      &:not(:last-of-type) {
-        margin-right: 100px;
-      }
+      margin-right: 100px;
       li {
         font-weight: 400;
         font-size: 18px;
