@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="src/style/css/styles.css">
+    <link rel="stylesheet" href="src/style/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="header_logo" src="src/img/logo34.svg" alt="two-squares-access-logo" width="34" height="34"/>
+            <nav class="header_navigation">
+                <ul>
+                    <li>
+                        <a href="/" tabindex="1">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/">Site Map</a>
+                    </li>
+                    <li>
+                        <select class="nav_language" name="language" id="language">
+                            <option value="english">Eng</option>
+                            <option value="ukrainian">Ukr</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <form class="header_search" role="search">
+                <input class="search_input" type="search" placeholder="Search this site"/>
+                <button class="search_button" type="submit">
+                    <img src="src/img/Search.svg" width="32" height="32" aria-hidden="true">
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main_description">
+                <h1 class="desc_header">Lorem ipsum dolor sit amet</h1>
+                <h2 class="desc_header2">Lorem ipsum dolor sit amet</h2>
+                <p class="desc_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+                    Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                    Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                    Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button class="main_buy-link" role="link">
+                    Buy Now
+                </button>
+            </div>
+            <img class="main_image" src="/src/img/main-img.png" width="648" height="648" alt="palm-leaves"/>
+        </div>
+    </main>
+
+    <section class="section-about">
+        <div class="container">
+            <div class="about-block">
+                <img class="about-block_image" src="src/img/about-img.png" width="180" height="230" alt="green-leaves"/>
+                <div class="about-block_description">
+                    <h3 class="about-desc-header">About us</h3>
+                    <p class="about-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+                        Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+                        hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit
+                        morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                        posuere eu risus cursus.
+                    </p>
+                    <a class="learn-more-link">
+                        Learn more about →
+                    </a>
+                </div>
+            </div>
+            <div class="about-block">
+                <img class="about-block_image" src="src/img/about-img.png" width="180" height="230" alt="green-leaves"/>
+                <div class="about-block_description">
+                    <h3 class="about-desc-header">About us 2</h3>
+                    <p class="about-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+                        Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+                        hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit
+                        morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                        posuere eu risus cursus.
+                    </p>
+                    <a class="learn-more-link">
+                        Learn more about →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact">
+        <div class="container">
+            <div class="contact-info">
+                <h1 class="contact-info_header">Contact Us</h1>
+                <p class="contact-info_text">Fill up the form and ur Team will get back to you within 24 hours. Happy to see your message!</p>
+                <address class="contact-info_contacts">
+                    <ul class="contacts-list">
+                        <li>
+                            <a href="tel:+380931532456">
+                                +380 93 15 32 456
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:example@gmail.com">
+                                example@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Pidmurna+St,+5%D0%B0,+L'viv,+L'vivs'ka+oblast,+Ukraine,+79000/@49.8460205,24.0261337,17z/data=!3m1!4b1!4m5!3m4!1s0x473add0d2c36aaab:0x7ed2108d093aee46!8m2!3d49.8460171!4d24.0283224">
+                                Pidmurma 5a, Lviv
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-links">
+                        <li class="social-link">
+                            <a>
+                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a>
+                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a>
+                                <img src="src/img/fb-icon.svg" width="28" height="28" aria-hidden="true">
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form_text-inputs">
+                        <div class="input">
+                            <label class="form-label" for="first-name"><span class="red">*</span> First Name</label>
+                            <input class="regular-input" type="text" id="first-name" name="first-name" required/>
+                        </div>
+                        <div class="input">
+                            <label class="form-label" for="last-name"><span class="red">*</span> Last Name</label>
+                            <input class="regular-input" type="text" id="last-name" name="last-name" required/>
+                        </div>
+                        <div class="input">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="regular-input" type="email" id="email" name="email"/>
+                        </div>
+                        <div class="input">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <div class="regular-input">
+                                <select class="phone-code" name="language" id="country-code">
+                                    <option value="ua">+380</option>
+                                    <option value="us">+1</option>
+                                </select>
+                                <input class="phone-input" type="tel" id="phone" name="phone"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_profession">
+                        <div class="radio-btn">
+                            <input type="radio" id="ui" name="profession" value="ui"/>
+                            <label class="form-label" for="ui">UI Developer</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="ui-ux" name="profession" value="ui-ux"/>
+                            <label class="form-label" for="ui-ux">UI/UX Designer</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="access-exp" name="profession" value="access-exp"/>
+                            <label class="form-label" for="access-exp">Accessibility  Expert</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="qa" name="profession" value="qa"/>
+                            <label class="form-label" for="qa">QA Engineer</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="other" name="profession" value="other"/>
+                            <label class="form-label" for="other">Other</>
+                        </div>
+                    </div>
+                    <div class="form_message">
+                        <label class="form-label">Message</label>
+                        <textarea placeholder="Text here..."></textarea>
+                    </div>
+                    <div class="form_terms">
+                        <div class="accept-terms">
+                            <input type="checkbox" required/>
+                            <label class="form-label">Accept Terms</label>
+                        </div>
+                        <div class="accept-terms">
+                            <input type="checkbox" required/>
+                            <label class="form-label">Accept Terms 2</label>
+                        </div>
+                    </div>
+                    <button class="send-message-btn" type="submit">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_left-box">
+                <h1 class="footer_company-name">PlantMe</h1>
+                <h4>Subscribe and be the first to know about our news and promotions.</h4>
+
+                <div class="footer_subscription">
+                    <input class="email-for-subscription" type="email" placeholder="example@gmail.com"/>
+                    <button class="subscribe-button" type="submit">Subscribe</button>
+                </div>
+            </div>
+                <nav class="footer_navigation">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="/">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/">Site Map</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <address>
+                            <li>Contacts</li>
+                            <li>
+                                <a class="contact-link" href="tel:+380630720121">
+                                    +38 063 072 0121
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-link" href="mailto:plantme.store@gmail.com">
+                                    plantme.store@gmail.com
+                                </a>
+                            </li>
+                        </address>
+                        <div class="billing-systems">
+                            <img src="src/img/visa.svg" width="50" height="29" alt="visa-logo">
+                            <img src="src/img/master.svg" width="50" height="42" alt="mastercard-logo">
+                        </div>
+                    </ul>
+                </nav>
+        </div>
+        <div class="footer_auth">
+            <div class="container">
+                <p>© 2022 PlantMe. All Rights Reserved</p>
+                <ul class="privacy-links">
+                    <li>
+                        <a href="/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="/">Language</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

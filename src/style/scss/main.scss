@@ -1,0 +1,35 @@
+.main {
+  padding: 24px 0 64px;
+  background-color: #F9F9F9;
+
+  &_description {
+    margin: 0 18px 0 0;
+    .desc {
+      &_header {
+        margin: 0 0 36px;
+      }
+      &_header2 {
+        margin: 0 0 12px;
+      }
+      &_text {
+        margin: 0 110px 0 0;
+        font-family: Helvetica, sans-serif;
+      }
+    }
+    h1, h2 {
+      color: #3A6150;
+    }
+  }
+
+  &_buy-link {
+    margin-top: 36px;
+    padding: 11px 63px;
+    line-height: 27px;
+  }
+
+  &_image {
+    width: 45vw;
+    max-width: 650px;
+    height: auto;
+  }
+}

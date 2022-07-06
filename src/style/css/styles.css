@@ -1,0 +1,402 @@
+@charset "UTF-8";
+.header {
+  padding: 16px 0;
+}
+.header_navigation ul {
+  display: flex;
+  align-items: center;
+  margin-left: 77px;
+  padding: 0;
+}
+.header_navigation ul li {
+  margin-right: 16px;
+}
+.header_navigation ul li:not(:last-of-type):after {
+  margin-left: 16px;
+  content: " | ";
+}
+.header_navigation ul li .nav_language {
+  border: none;
+  padding: 0 11px 0;
+}
+.header_search {
+  display: flex;
+  margin: 0 0 0 auto;
+  height: 48px;
+  width: 424px;
+  border: 2px solid #3A6150;
+}
+.header_search .search_input {
+  flex: 1;
+  padding: 11px 16px;
+  height: 48px;
+  border: none;
+}
+.header_search .search_button {
+  flex: 0;
+  margin: 0 0 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.main {
+  padding: 24px 0 64px;
+  background-color: #F9F9F9;
+}
+.main_description {
+  margin: 0 18px 0 0;
+}
+.main_description .desc_header {
+  margin: 0 0 36px;
+}
+.main_description .desc_header2 {
+  margin: 0 0 12px;
+}
+.main_description .desc_text {
+  margin: 0 110px 0 0;
+  font-family: Helvetica, sans-serif;
+}
+.main_description h1, .main_description h2 {
+  color: #3A6150;
+}
+.main_buy-link {
+  margin-top: 36px;
+  padding: 11px 63px;
+  line-height: 27px;
+}
+.main_image {
+  width: 45vw;
+  max-width: 650px;
+  height: auto;
+}
+
+.section-about {
+  padding: 80px 0;
+}
+.section-about .about-block {
+  display: flex;
+  padding: 24px 24px 35px;
+  background-color: #3A6150;
+  color: white;
+}
+.section-about .about-block:not(:last-of-type) {
+  margin-right: 18px;
+}
+.section-about .about-block_image {
+  margin-right: 18px;
+}
+.section-about .about-block_description {
+  display: flex;
+  flex-direction: column;
+}
+.section-about .about-block_description .about-desc-header {
+  margin-bottom: 12px;
+  line-height: 27px;
+}
+.section-about .about-block_description .learn-more-link {
+  margin: auto 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+@counter-style circled-alpha {
+  system: fixed;
+  symbols: Ⓕ Ⓕ Ⓕ;
+  suffix: " ";
+}
+.section-contact {
+  padding: 80px 0 120px;
+  background-color: #71837B;
+}
+.section-contact .container {
+  background: #FFFFFF;
+  border-radius: 12px;
+  align-items: stretch;
+}
+.section-contact .contact-info {
+  position: relative;
+  background-image: url("../../img/contact_bck.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 425px;
+  padding: 42px;
+  box-sizing: border-box;
+}
+.section-contact .contact-info_header {
+  margin-bottom: 16px;
+}
+.section-contact .contact-info_text {
+  margin-bottom: 55px;
+}
+.section-contact .contact-info_contacts .contacts-list {
+  padding-left: 20px;
+  list-style: circled-alpha;
+}
+.section-contact .contact-info_contacts .contacts-list li:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+.section-contact .contact-info_contacts .contacts-list li a {
+  color: black;
+  text-decoration: none;
+  padding-left: 25.5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.section-contact .contact-info_contacts .social-links {
+  display: flex;
+  position: absolute;
+  bottom: 42px;
+  padding-left: 0;
+}
+.section-contact .contact-info_contacts .social-links .social-link:not(:last-of-type) {
+  margin-right: 40px;
+}
+.section-contact .contact-form {
+  flex-basis: 67%;
+  padding: 48px 20px;
+}
+.section-contact .contact-form form .form-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+.section-contact .contact-form form .form_text-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.section-contact .contact-form form .form_text-inputs .input {
+  width: calc(50% - 6px);
+  margin-bottom: 18px;
+}
+.section-contact .contact-form form .form_text-inputs .input:nth-child(odd) {
+  margin-right: 12px;
+}
+.section-contact .contact-form form .form_text-inputs .input label {
+  display: block;
+}
+.section-contact .contact-form form .form_text-inputs .input .regular-input {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-contact .contact-form form .form_text-inputs .input .regular-input:focus-within {
+  outline: 1px solid #3A6150;
+}
+.section-contact .contact-form form .form_text-inputs .input .regular-input .phone-input {
+  padding-left: 5px;
+  border: none;
+  border-left: 1px solid gray;
+  line-height: 30px;
+}
+.section-contact .contact-form form .form_text-inputs .input .regular-input .phone-input:focus {
+  outline-color: transparent;
+}
+.section-contact .contact-form form .form_text-inputs .input .regular-input .phone-code {
+  border: none;
+  border-right: 10px solid transparent;
+}
+.section-contact .contact-form form .form_profession {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.section-contact .contact-form form .form_profession .radio-btn {
+  display: flex;
+  align-items: center;
+}
+.section-contact .contact-form form .form_profession .radio-btn input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.section-contact .contact-form form .form_message {
+  margin-bottom: 30px;
+}
+.section-contact .contact-form form .form_message textarea {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.section-contact .contact-form form .form_message textarea:focus {
+  outline-color: #3A6150;
+}
+.section-contact .contact-form form .form_terms {
+  display: flex;
+  margin-bottom: 40px;
+}
+.section-contact .contact-form form .form_terms .accept-terms {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.section-contact .contact-form form .form_terms .accept-terms input {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+.section-contact .contact-form form .send-message-btn {
+  float: right;
+  width: 196px;
+  height: 49px;
+  border-radius: 2px;
+}
+
+.footer {
+  padding: 24px 0 0;
+}
+.footer .container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer_company-name {
+  margin-bottom: 20px;
+}
+.footer_subscription {
+  margin: 30px 0;
+}
+.footer_subscription .email-for-subscription {
+  margin-right: 30px;
+  padding-bottom: 11px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.footer_subscription .email-for-subscription::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.footer_subscription .subscribe-button {
+  padding: 15px 58px;
+}
+.footer_navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.footer_navigation .nav-list {
+  list-style: none;
+}
+.footer_navigation .nav-list:not(:last-of-type) {
+  margin-right: 100px;
+}
+.footer_navigation .nav-list li {
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer_navigation .nav-list li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.footer_navigation .nav-list li .contact-link {
+  color: gray;
+  text-decoration: none;
+}
+.footer_navigation .nav-list .billing-systems {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-top: 40px;
+}
+.footer_auth {
+  padding: 24px 0;
+  border-top: 1px solid gray;
+}
+.footer_auth .container {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer_auth .privacy-links {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.footer_auth .privacy-links li {
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer_auth .privacy-links li a {
+  color: gray;
+}
+.footer_auth .privacy-links li:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1312px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.red {
+  color: red;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #3A6150;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,70 @@
+@import "./header";
+@import "./main";
+@import "./about";
+@import "./contact";
+@import "./footer";
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1312px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.red {
+  color: red;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #3A6150;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  cursor: pointer;
+}

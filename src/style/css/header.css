@@ -1,0 +1,57 @@
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1312px;
+}
+
+header {
+  height: 80px;
+  padding: 16px 0;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: 77px;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+header nav ul li:not(:last-of-type):after {
+  margin-left: 16px;
+  content: " | ";
+}
+header nav ul li .nav_language {
+  border: none;
+  padding: 0 11px 0;
+}
+header .search {
+  display: flex;
+  margin: 0 0 0 auto;
+  height: 48px;
+  width: 424px;
+  border: 2px solid #3A6150;
+}
+header .search .search_input {
+  flex: 1;
+  padding: 11px 16px;
+  height: 48px;
+  border: none;
+}
+header .search .search_button {
+  flex: 0;
+  margin: 0 0 0 auto;
+  height: 48px;
+  width: 48px;
+  border: none;
+  background-color: #3A6150;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

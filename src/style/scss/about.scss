@@ -1,0 +1,33 @@
+.section-about {
+  padding: 80px 0;
+
+  .about-block {
+    display: flex;
+    padding: 24px 24px 35px;
+    background-color: #3A6150;
+    color: white;
+    &:not(:last-of-type) {
+      margin-right: 18px;
+    }
+
+    &_image {
+      margin-right: 18px;
+    }
+
+    &_description {
+      display: flex;
+      flex-direction: column;
+
+      .about-desc-header {
+        margin-bottom: 12px;
+        line-height: 27px;
+      }
+
+      .learn-more-link {
+        margin: auto 0 0;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

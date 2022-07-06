@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@counter-style circled-alpha {
+  system: fixed;
+  symbols: Ⓕ;
+  suffix: " ";
+}
+
+/*# sourceMappingURL=list-type.css.map */
