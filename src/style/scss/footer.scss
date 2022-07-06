@@ -8,6 +8,10 @@
   &_company-name {
     margin-bottom: 20px;
   }
+  &_subscribe-text {
+    font-weight: 400;
+    font-size: 18px;
+  }
 
   &_subscription {
     margin: 30px 0;
@@ -43,7 +47,7 @@
           margin-bottom: 16px;
         }
         .contact-link {
-          color: gray;
+          color: rgba(0, 0, 0, 0.6);
           text-decoration: none;
         }
       }
@@ -58,7 +62,7 @@
 
   &_auth {
     padding: 24px 0;
-    border-top: 1px solid gray;
+    border-top: 1px solid #E9E9E9;
     .container {
       align-items: center;
       justify-content: center;
@@ -72,7 +76,7 @@
         font-weight: 400;
         font-size: 14px;
         a {
-          color: gray
+          color: rgba(17, 17, 17, 0.5);
         }
         &:not(:last-of-type) {
           margin-right: 15px;

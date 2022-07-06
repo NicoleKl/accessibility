@@ -263,6 +263,10 @@
 .footer_company-name {
   margin-bottom: 20px;
 }
+.footer_subscribe-text {
+  font-weight: 400;
+  font-size: 18px;
+}
 .footer_subscription {
   margin: 30px 0;
 }
@@ -299,7 +303,7 @@
   margin-bottom: 16px;
 }
 .footer_navigation .nav-list li .contact-link {
-  color: gray;
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 .footer_navigation .nav-list .billing-systems {
@@ -310,7 +314,7 @@
 }
 .footer_auth {
   padding: 24px 0;
-  border-top: 1px solid gray;
+  border-top: 1px solid #E9E9E9;
 }
 .footer_auth .container {
   align-items: center;
@@ -327,7 +331,7 @@
   font-size: 14px;
 }
 .footer_auth .privacy-links li a {
-  color: gray;
+  color: rgba(17, 17, 17, 0.5);
 }
 .footer_auth .privacy-links li:not(:last-of-type) {
   margin-right: 15px;
